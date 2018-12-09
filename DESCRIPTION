@@ -1,0 +1,21 @@
+Package: viewshed3d
+Title: Compute Viewshed in 3D Terrestrial Laser Scanner Scenes of
+        Ecosystems
+Version: 1.0.0
+Authors@R: c(person("Bastien", "Lecigne", email = "lecignebastien@gmail.com", role = c("aut", "cre")), person("Jan", "Eitel", role=c("aut")))
+Description: A set of tools to compute viewshed in 3D from Terrestrial Laser Scanner data and prepare the data prior to visibility calculation.
+Depends: R (>= 3.4.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: VoxR (>= 0.5.1), rgl (>= 0.99.16), doParallel (>= 1.0.14),
+        foreach (>= 1.4.4), tcltk2 (>= 1.2.9), iterators (>= 1.0.9),
+        tcltk (>= 3.4.4), utils (>= 3.4.4)
+NeedsCompilation: no
+Packaged: 2018-12-01 07:14:51 UTC; bastien
+Author: Bastien Lecigne [aut, cre],
+  Jan Eitel [aut]
+Maintainer: Bastien Lecigne <lecignebastien@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-12-09 14:20:03 UTC
