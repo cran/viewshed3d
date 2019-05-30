@@ -25,3 +25,17 @@ a dataframe containing the reshaped TLS scene
 The \strong{reshape.scene} function enables reshaping a TLS scene at any time in the data preparation process. It enables application of a
 cut off distance and recentering a TLS scene by providing a user defined scene center, or by allowing users to interactively select a region of the point cloud to be used as the scene center.
 }
+\examples{
+\donttest{
+library(viewshed3d)
+data(TLSclass)
+
+# when a point is provided, the scene is automatically reshaped
+center=c(mean(TLSclass[,1]),mean(TLSclass[,2]),mean(TLSclass[,3]))
+reshaped=reshape.scene(TLSclass,point = center,radius = 2, plot3d = TRUE)
+
+# if no point is provided, the user has to select a region (draw a squared region with the
+# right click) of the point cloud that will be used as the scene center
+reshaped=reshape.scene(TLSclass,radius = 2, plot3d = TRUE)
+}
+}

@@ -4,30 +4,28 @@
 \alias{view}
 \title{Compute visibility in 3D TLS scene}
 \usage{
-view(data, param, scene.center, scene.radius, shape, plot3d, plot.result)
+view(data, param, location, plot3d, plot.result)
 }
 \arguments{
 \item{data}{a data.frame containing the xyz coordinates of a TLS point cloud}
 
 \item{param}{a data.frame containing the directions that will be used to explore the point cloud}
 
-\item{scene.center}{a vector containing the xyz coordinates of the scene center. Defauls is 0,0,0.}
-
-\item{scene.radius}{the cut-off distance relative to the \emph{scene.center}}
-
-\item{shape}{the shape of the scene radius reshaping (see \code{\link{reshape.scene}} function for more details). Default = "3d"}
+\item{location}{a vector containing the xyz coordinates of the point representing the animal location. Default is 0,0,0.}
 
 \item{plot3d}{logical. If \emph{TRUE} a 3D view of the point cloud exploration is plotted}
 
 \item{plot.result}{logical. If \emph{TRUE} the \% of visibility vs. distance is ploted}
 }
 \value{
-a data.frame containing the distance, the number of point found at this distance and the \% of remaining visibility.
+a list containing the remaining visibility as function of the distance from the scene center ($visibility) and the 3D point cloud of
+the portion of data seen from the scene center ($points).
 }
 \description{
 The \strong{view} function explores a TLS point cloud in all directions of the 3D space and records the nearest point in each direction.
 A single direction is thus assumed to be a sligthline that ends as soon as an object is encountered (see package description for more details).
 The view function requires a parameter data.frame produced with the \code{\link{view.param}} function, and the angle of a single slightline is thus defined at this step.
+The visibility is computed from a user defiend location.
 }
 \note{
 some existing parameters are already provided with the viewshed3d package with parameters for an angular resolution ranging from 1 to 10 : \link{param_1},
@@ -41,11 +39,6 @@ data(param_10)
 
 center=c(mean(TLSrecons[,1]),mean(TLSrecons[,2]),mean(TLSrecons[,3]))
 
-view.data=view(TLSrecons,param = param_10,scene.center = center, scene.radius = 2, plot3d = TRUE)
-
-head(view.data)
+view.data=view(TLSrecons,param = param_1,location = center, plot3d = TRUE)
 }
-}
-\seealso{
-\code{\link{view.par}} for more effecient computation.
 }

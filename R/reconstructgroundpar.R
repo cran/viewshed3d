@@ -24,6 +24,7 @@
 #' @import VoxR doParallel foreach parallel iterators
 #'
 #' @examples
+#'\donttest{
 #' library(viewshed3d)
 #' data(TLSclass)
 #' ground=subset(TLSclass,TLSclass[,4]=='ground')
@@ -32,6 +33,7 @@
 #' library(rgl)
 #' open3d()
 #' plot3d(reconstructed,add=TRUE)
+#' }
 
 
 reconstruct.ground.par <- function(data,grid.res,scene.radius,scene.center,shape,method,d,k,reconstruct.all,ncores){

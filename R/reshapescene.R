@@ -16,7 +16,7 @@
 #' @import tcltk2 tcltk rgl VoxR
 #'
 #' @examples
-#'
+#' \donttest{
 #' library(viewshed3d)
 #' data(TLSclass)
 #'
@@ -26,9 +26,8 @@
 #'
 #' # if no point is provided, the user has to select a region (draw a squared region with the
 #' # right click) of the point cloud that will be used as the scene center
-#' if(interactice()){
 #' reshaped=reshape.scene(TLSclass,radius = 2, plot3d = TRUE)
-#, }
+#' }
 
 
 reshape.scene=function(data,point,radius,shape,plot3d){

@@ -1,9 +1,11 @@
-b9f2de4a264b40748b0c40e56fe1c2b5 *DESCRIPTION
-f7dcdaf6014273f117e72f36d99c72d5 *NAMESPACE
+5804484d5657914642b6e86c56d92aae *DESCRIPTION
+1f54632ebd4a6c0eb45c41d84cf1d98d *NAMESPACE
+50dc4ced730cf6c19daca8a0fa3b3d97 *R/Globalenv.R
 0c1033c819d1429dab7448bb6a97a566 *R/TLSclass.R
 5a8bcab6d014733c9afdb8414e459f14 *R/TLSrecons.R
 95b163d47392e29ebc07c224d2655e62 *R/TLSscene.R
 f784e842e17904c09595a70a230908d8 *R/classground.R
+4e6d94defcccc2d4c8610ae093004840 *R/cum.sum.R
 fe196b783a4bb9906072cfe2ca9e1d75 *R/groundfilter.R
 7f41433a06718d928115837a9113ee0b *R/param1.R
 dfad1e4580c171b0bc29376a1cf8e4c0 *R/param10.R
@@ -17,10 +19,9 @@ dfa6e971ffd187c57d091bc7567d3ba1 *R/param7.R
 9fc7d5c936d7a5906915413b3cc4a1aa *R/param9.R
 1b847e3e391bfda7766d9317c8657e8a *R/param_10.R
 337b049683d1034702920286e35582cf *R/reconstructground.R
-ab033e146f87794d51da10afa53900ab *R/reconstructgroundpar.R
-1a25601de1d501b91fb18e2cb6cdcecb *R/reshapescene.R
-e04aed03e9a56a1d0067b89c07f5deda *R/view.R
-a5a15b48e5a262d7e78e288509e5928b *R/viewpar.R
+97ff72c8c0a219b44d5f6b801a38ac50 *R/reconstructgroundpar.R
+054054c06bd03598b2b16ad14f368f9c *R/reshapescene.R
+7683448164864bf22b25ea33cfba2b3d *R/view.R
 d056ce451d4fbc2c426a71dffd333c23 *R/viewparam.R
 7ec031e9bc5d9a70be5fefbab09384ab *data/TLSclass.rda
 543071361d8642f42ddad86acb7f13b7 *data/TLSrecons.rda
@@ -40,6 +41,7 @@ d99fef77488a3eee4b1453dade981edb *data/param_9.rda
 fc06a18b69c7a4e24201d0efe2784bf7 *man/TLSrecons.Rd
 c2d8fadc109eb46cd63bc7beaeae82ce *man/TLSscene.Rd
 ec56d9a4ee8dc54f79187de2c658792c *man/class.ground.Rd
+0d6f28f138a91cf6fabe6c5d82471288 *man/cum.view.Rd
 eb73cd4dc418ca12a29f7878923f2d0e *man/ground.filter.Rd
 ca8f8d14af54e0542a2e1c8e0aac41ea *man/param_1.Rd
 94ce47d3f93bd4cc3420a260e8c0fc6c *man/param_10.Rd
@@ -53,8 +55,7 @@ ce867181098a1c5bcfb81cbbc1e3f2f5 *man/param_7.Rd
 bbacc9e68378b0fda4f36e4d901380f7 *man/param_9.Rd
 d30a4609cfacd07c577e2c0235291258 *man/reconstruct.ground.Rd
 365fb9ebf0e14b07758e1b7adc3148bc *man/reconstruct.ground.par.Rd
-205c852d76af481c4c04f99a36fb40e3 *man/reshape.scene.Rd
-dad42db8684eb19beaad53a353d29ff4 *man/view.Rd
-04f04d433e1c946e4684af9970da219f *man/view.par.Rd
+83d0f3a9f5a71e513d2b5e707364749b *man/reshape.scene.Rd
+98d3a10734f1260d0b2100d6fb40a825 *man/view.Rd
 b2de15e5bd1066bcf43ba5089a1a1c6e *man/view.param.Rd
-69ed852291a39ab8e8ef1853bffd3dbd *man/viewshed3d-package.Rd
+3e735e7ebab7d21f99a5cdb2faddb65b *man/viewshed3d-package.Rd
