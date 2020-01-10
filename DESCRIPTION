@@ -1,22 +1,24 @@
 Package: viewshed3d
-Title: Compute Viewshed in 3D Terrestrial Laser Scanner Scenes of
-        Ecosystems
-Version: 2.0.0
-Authors@R: c(person("Bastien", "Lecigne", email = "lecignebastien@gmail.com", role = c("aut", "cre")), person("Jan", "Eitel", role=c("aut")))
-Description: A set of tools to compute viewshed in 3D from Terrestrial Laser Scanner data and prepare the data prior to visibility calculation.
-Depends: R (>= 3.4.0)
+Title: Compute Viewshed in 3D Point Clouds of Ecosystems
+Version: 3.0.0
+Authors@R: 
+    c(person(given = "Bastien",
+           family = "Lecigne",
+           role = c("aut", "cre"),
+           email = "lecignebastien@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0002-1496-202X")),
+      person("Jan", "Eitel", role = "aut"))
+Description: A set of tools to compute viewshed in 3D from Terrestrial Laser Scanner data and prepare the data prior to visibility estimation.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
-Imports: VoxR (>= 0.5.1), rgl (>= 0.99.16), doParallel (>= 1.0.14),
-        foreach (>= 1.4.4), tcltk2 (>= 1.2.11), iterators (>= 1.0.10),
-        tcltk (>= 3.4.4), utils (>= 3.4.4), data.table (>= 1.12.0),
-        viridis (>= 0.5.1)
+Imports:
+        data.table,raster,lidR,rgl,pracma,viridis,TreeLS,utils,nabor,sp
 NeedsCompilation: no
-Packaged: 2019-05-30 22:17:48 UTC; bastien
-Author: Bastien Lecigne [aut, cre],
+Packaged: 2020-01-08 23:17:28 UTC; bastienlecigne
+Author: Bastien Lecigne [aut, cre] (<https://orcid.org/0000-0002-1496-202X>),
   Jan Eitel [aut]
 Maintainer: Bastien Lecigne <lecignebastien@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-05-30 22:30:04 UTC
+Date/Publication: 2020-01-10 05:20:02 UTC
