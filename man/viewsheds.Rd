@@ -42,8 +42,8 @@ a similar portion of the 3d space.
 \note{
 In most cases, a ground reconstruction should be performed before
 viewsheds computation. This can be done with
-the \code{\link[lidR]{lasground}} and \code{\link[lidR]{grid_terrain}}
-functions from the \code{\link[lidR]{lidR}} package.
+the \code{\link[lidR]{classify_ground}} and \code{\link[lidR]{grid_terrain}}
+functions from the \code{\link[lidR]{lidR-package}}.
 }
 \examples{
 \donttest{
@@ -57,7 +57,7 @@ tls_clean <- viewshed3d::denoise_scene(tls,method="sd",
 
 #- RECONSTRUCT THE GROUND
 #- classify ground points
-class=lidR::lasground(tls_clean, lidR::csf(rigidness = 1L,
+class=lidR::classify_ground(tls_clean, lidR::csf(rigidness = 1L,
                                            class_threshold = 0.1,
                                            sloop_smooth = TRUE), FALSE)
 

@@ -3,7 +3,6 @@
 \docType{package}
 \name{viewshed3d}
 \alias{viewshed3d}
-\alias{viewshed3d-package}
 \title{\strong{viewshed3d}: tools to compute visibility in 3D point clouds of ecosystems}
 \description{
 For many animals, the ability to visually assess the environment and detect approaching predators is an important

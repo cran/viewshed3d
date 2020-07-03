@@ -8,8 +8,8 @@
 #'
 #' @param data LAS class object containing a 3d point cloud + a Classification
 #' field that classes points as ground and non-ground, as provided by the
-#' \code{\link[lidR]{lasground}} function from the \code{\link[lidR]{lidR}}
-#' package.
+#' \code{\link[lidR]{classify_ground}} function from the
+#' \code{\link[lidR]{lidR-package}}.
 #' @param ground_res numeric. The grid resolution to reconstruct the ground on
 #' the entire 3D scene. Default = 0.05. NOTE: a if needed, second grid may be added
 #' with smaller (internally computed) resolution.
@@ -21,12 +21,12 @@
 #' Default = 1.
 #' @param method which algorithm to use for spatial interpolation. Can be
 #' "knnidw", "tin" or "kriging". See documentation from the
-#' \code{\link[lidR]{lidR}} package for \code{\link[lidR]{knnidw}},
+#' \code{\link[lidR]{lidR-package}} for \code{\link[lidR]{knnidw}},
 #' \code{\link[lidR]{tin}} and \code{\link[lidR]{kriging}}.
 #' @param full_raster should the entire raster be interpolated for the ground
 #' portion around the animal position? Parameter passed to the
 #' \code{\link[lidR]{grid_terrain}} function available in the
-#' \code{\link[lidR]{lidR}} package.
+#' \code{\link[lidR]{lidR-package}}.
 #' @param ... other arguments to pass to the spatial interpolation algorithm.
 #' See documentation from \code{\link[lidR]{knnidw}}, \code{\link[lidR]{tin}}
 #' and \code{\link[lidR]{kriging}}
@@ -47,7 +47,7 @@
 #' tls <- lidR::readLAS(file,select="xyz")
 #'
 #' #- class ground and vegetation points
-#' class <- lidR::lasground(tls, lidR::csf(rigidness = 1L,
+#' class <- lidR::classify_ground(tls, lidR::csf(rigidness = 1L,
 #'                                         class_threshold = 0.2,
 #'                                         sloop_smooth = FALSE))
 #'

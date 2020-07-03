@@ -64,7 +64,7 @@ tls_clean <- viewshed3d::denoise_scene(tls,method="sd",
 
 
 #- class ground and vegetation points
-class <- lidR::lasground(tls_clean, lidR::csf(rigidness = 1L,
+class <- lidR::classify_ground(tls_clean, lidR::csf(rigidness = 1L,
                                               class_threshold = 0.2,
                                               sloop_smooth = FALSE))
 
@@ -86,8 +86,7 @@ view.data <- viewshed3d::visibility(data = recons,
                                     store_points = TRUE)
 
 #- 3D plot with visible points in white and non-visible points in darkgrey
-x=lidR::plot(view.data$points,add=TRUE,color="Visibility",
-             colorPalette = c("grey24","white"))
+x=lidR::plot(view.data$points,color="Visibility",colorPalette = c("grey24","white"))
 
 #- add animal position to the plot
 position=data.frame(X=center[1],Y=center[2],Z=center[3])

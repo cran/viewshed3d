@@ -1,6 +1,6 @@
 Package: viewshed3d
 Title: Compute Viewshed in 3D Point Clouds of Ecosystems
-Version: 3.0.0
+Version: 3.2.0
 Authors@R: 
     c(person(given = "Bastien",
            family = "Lecigne",
@@ -12,13 +12,12 @@ Description: A set of tools to compute viewshed in 3D from Terrestrial Laser Sca
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
-Imports:
-        data.table,raster,lidR,rgl,pracma,viridis,TreeLS,utils,nabor,sp
+RoxygenNote: 7.1.0
+Imports: data.table,raster,lidR,rgl,pracma,viridis,utils,nabor,sp
 NeedsCompilation: no
-Packaged: 2020-01-08 23:17:28 UTC; bastienlecigne
+Packaged: 2020-07-03 16:57:50 UTC; bastienlecigne
 Author: Bastien Lecigne [aut, cre] (<https://orcid.org/0000-0002-1496-202X>),
   Jan Eitel [aut]
 Maintainer: Bastien Lecigne <lecignebastien@gmail.com>
 Repository: CRAN
-Date/Publication: 2020-01-10 05:20:02 UTC
+Date/Publication: 2020-07-03 17:10:03 UTC
