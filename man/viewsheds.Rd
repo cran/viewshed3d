@@ -52,7 +52,7 @@ file = system.file("extdata", "tree_line_plot.laz", package="viewshed3d")
 tls = lidR::readLAS(file,select="xyz")
 
 #- remove noise to avoid visibility estimates error
-tls_clean <- viewshed3d::denoise_scene(tls,method="sd",
+tls_clean = viewshed3d::denoise_scene(tls,method="sd",
                                        filter=6)
 
 #- RECONSTRUCT THE GROUND

@@ -24,14 +24,13 @@ visibility analyses.}
 with visible and not visible points classified (see details).}
 }
 \value{
-If \code{store_points = FALSE}, a data.table of the visibility
+If \code{store_points = FALSE}, a list containing the data.table of the visibility
 (Visibility) as a function of distance to the animal location (r) is
-returned. If \code{store_points = TRUE}, a list containing two objects is
-returned. The first object is similar to the data.table returned when
-\code{store_points = FALSE}. The second object is a LAS class object
-containing the coordinates of the point cloud (X, Y, Z), the distance of
-each point to the animal position (r) and the class of each point: visible
-or not visible from the animal position (Visibility = 2 or 1, respectively).
+returned and the viewshed coefficient (the area under the curve of visibility
+as function of distance). If \code{store_points = TRUE}, a LAS containing
+the point cloud (X, Y, Z), the distance of each point to the animal position
+(r) and the class of each point: visible or not visible from the animal
+position (Visibility = 2 or 1, respectively) is added to the output.
 }
 \description{
 Computes visibility from a user-defined location with
@@ -84,6 +83,9 @@ view.data <- viewshed3d::visibility(data = recons,
                                     angular_res = angle,
                                     scene_radius = 17, # apply cut_oof distance
                                     store_points = TRUE)
+
+#- viewshed coefficient
+view.data$viewshed_coeffecient
 
 #- 3D plot with visible points in white and non-visible points in darkgrey
 x=lidR::plot(view.data$points,color="Visibility",colorPalette = c("grey24","white"))
